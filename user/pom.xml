@@ -12,28 +12,36 @@
 
     <artifactId>user</artifactId>
 
+	<properties>
+    	<spring.boot.version>2.5.4</spring.boot.version>  <!-- ご使用のSpring Bootのバージョンに書き換えてください -->
+	</properties>
+
 	<dependencies>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-actuator</artifactId>
+			<version>${spring.boot.version}</version>
 		</dependency>
 
 		<!-- web development, including Tomcat and spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring.boot.version}</version>
 		</dependency>
 
 		<!-- Spring security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+			<version>${spring.boot.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<version>${spring.boot.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -41,6 +49,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>${spring.boot.version}</version>
 		</dependency>
 
 		<dependency>
@@ -53,6 +62,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<version>${spring.boot.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -85,12 +95,6 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.5.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
