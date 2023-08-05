@@ -1,0 +1,11 @@
+name: actions
+
+on:
+    pull_request:
+        branches: [ dev ]
+
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo Hello workd
